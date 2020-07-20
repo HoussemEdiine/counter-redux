@@ -7,7 +7,9 @@ function Counter({dispatch,count}) {
       dispatch({type : INCREMENT})
     }
     const decrement = () =>{
+      if(count>0){
       dispatch({type : DECREMENT})
+      }
     }
     
     return (
